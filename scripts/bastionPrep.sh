@@ -70,6 +70,11 @@ echo $(date) " - Installing OpenShift utilities"
 
 yum -y install atomic-openshift-utils
 
+# Install ansible
+echo $(date) " - Installing Ansible"
+
+yum -y install ansible
+
 # Create playbook to update ansible.cfg file to include path to library
 # Filename: updateansiblecfg.yaml
 
